@@ -10,7 +10,7 @@ def init_browser():
     
     #Mac OS
     executable_path = {'executable_path': '/usr/local/bin/chromedriver'}
-    return Browser('chrome', headless=True, **executable_path)
+    return Browser('chrome',  **executable_path)
 
 # Create Mission to Mars global dictionary that can be imported into Mongo
 mars_info = {}
@@ -221,3 +221,10 @@ def scrape_mars_hemispheres():
     finally:
 
         browser.quit()
+# if __name__ == "__main__":
+#     listings1 = scrape_mars_news()
+#     listings2 = scrape_mars_hemispheres()
+#     listings3 = scrape_mars_facts()
+#     print(listings1)
+#     print(listings2)
+#     print(listings3)
