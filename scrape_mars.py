@@ -8,10 +8,6 @@ import requests
 def init_browser(): 
     # Replace the path with your actual path to the chromedriver
     
-    # Windows Users
-    # executable_path = {'executable_path': '/Users/cantu/Desktop/Mission-to-Mars'}
-    # return Browser('chrome', **executable_path, headless=False)
-
     #Mac OS
     executable_path = {'executable_path': '/app/.chromedriver/bin/chromedriver'}
     return Browser('chrome', headless=True, **executable_path)
