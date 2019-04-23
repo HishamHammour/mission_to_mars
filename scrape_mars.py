@@ -9,7 +9,7 @@ def init_browser():
     # Replace the path with your actual path to the chromedriver
     
     #Mac OS
-    executable_path = {'executable_path': '/app/.chromedriver/bin/chromedriver'}
+    executable_path = {'executable_path': '/usr/local/bin/chromedriver'}
     return Browser('chrome', headless=True, **executable_path)
 
 # Create Mission to Mars global dictionary that can be imported into Mongo
